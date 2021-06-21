@@ -14,7 +14,7 @@ const Hero = () => {
                     <svg className="w-6 h-6 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
                 </Link>
             </div>
-            <video autoPlay loop muted className="absolute opacity-80 z-10 w-auto min-w-full min-h-full max-w-none">
+            <video muted autoPlay loop className="absolute opacity-80 z-10 w-auto min-w-full min-h-full max-w-none">
                 <source src={Video} type="video/mp4" />
                 Seu navegador não suporte este tipo de conteúdo.
             </video>
