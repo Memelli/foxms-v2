@@ -1,10 +1,13 @@
 import './App.css';
+import Hero from './components/Header/Hero';
+import Navbar from './components/Header/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>foxms</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 
