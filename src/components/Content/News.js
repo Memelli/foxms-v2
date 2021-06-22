@@ -8,12 +8,12 @@ const NewsHome = () => {
                     <div className="h-auto font-light flex flex-col items-center p-2 m-auto">
                         <h1 className="text-3xl">Notícias</h1>
                     </div>
-                    <div className="h-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
+                    <div className="h-auto w-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
                         <div className="h-auto relative flex flex-row items-center justify-center p-2 sm:p-0 md:p-0">
                             <div className="items-center text-white bg-blue-500 p-2 flex justify-center font-light mr-2 rounded-md">
                                 05/04
                             </div>
-                            <div className="h-auto relative flex flex-col p-2">
+                            <div className="h-auto relative min-w-max flex flex-col p-2">
                                 <div>
                                     Notícia
                                 </div>
@@ -48,7 +48,7 @@ const NewsHome = () => {
                                     Atualização
                                 </div>
                                 <div>
-                                    <small>Para a correção de um bug, uma atualização foi... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
+                                    <small>Para a correção de um bug, uma atualizac... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ const NewsHome = () => {
                                     Proximo evento
                                 </div>
                                 <div>
-                                    <small>Depois que sairmos do beta um evento será marcado... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
+                                    <small>Depois que sairmos do beta um evento será ma... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
                                 </div>
                             </div>
                         </div>
