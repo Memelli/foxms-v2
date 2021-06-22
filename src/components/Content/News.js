@@ -3,115 +3,76 @@ import React from 'react'
 const NewsHome = () => {
     return (
         <>
-            <div className="relative flex flex-row items-center justify-center flex-wrap p-8">
-                <div className="h-auto bg-white relative flex flex-col items-center justify-center mb-12 overflow-hidden">
-                    <div className="h-auto font-light flex flex-col items-center p-2 m-auto">
-                        <h1 className="text-3xl">Notícias</h1>
+            <div className="flex flex-col items-center mb-16">
+                <h1 className="text-4xl font-thin">Notícias e Eventos</h1>
+                <div class="px-10 my-4 py-6 rounded shadow-md hover:shadow-xl bg-white w-4/5 mx-auto">
+                    <div class="flex justify-between items-center">
+                        <span class="font-light text-gray-600">March 28, 2021</span>
+                        <a class="px-2 py-1 bg-blue-500 text-gray-100 font-bold rounded hover:bg-blue-600" href="/">Notícia</a>
                     </div>
-                    <div className="h-auto w-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
-                        <div className="h-auto relative flex flex-row items-center justify-center p-2 sm:p-0 md:p-0">
-                            <div className="items-center text-white bg-blue-500 p-2 flex justify-center font-light mr-2 rounded-md">
-                                05/04
-                            </div>
-                            <div className="h-auto relative min-w-max flex flex-col p-2">
-                                <div>
-                                    Notícia
-                                </div>
-                                <div>
-                                    <small>O lançamento do servidor foi adiado para... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mt-2">
+                        <a class="text-2xl text-gray-700 font-bold hover:text-gray-600" href="/">
+                            Lorem ipsum dolor sit amet
+                        </a>
+                        <p class="mt-2 text-gray-600">
+                            Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                        </p>
                     </div>
-                    <div className="h-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
-                        <div className="h-auto relative flex flex-row items-center justify-center p-2">
-                            <div className="items-center text-white bg-red-500 p-2 flex justify-center font-light mr-2 rounded-md">
-                                05/04
-                            </div>
-                            <div className="h-auto relative flex flex-col p-2">
-                                <div>
-                                    Manutenção
-                                </div>
-                                <div>
-                                    <small>Uma manutenção foi agendada para o dia... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
-                        <div className="h-auto relative flex flex-row items-center justify-center p-2">
-                            <div className="items-center text-white bg-yellow-500 p-2 flex justify-center font-light mr-2 rounded-md">
-                                05/04
-                            </div>
-                            <div className="h-auto relative flex flex-col p-2">
-                                <div>
-                                    Atualização
-                                </div>
-                                <div>
-                                    <small>Para a correção de um bug, uma atualizac... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-row items-center justify-center p-1">
-                        <a className="hover:text-blue-500 hover:underline" href="/">Mais Eventos</a>
+                    <div class="flex justify-between items-center mt-4">
+                        <a class="text-blue-600 hover:underline" href="/">Visit Article</a>
                     </div>
                 </div>
-
-                <div className="h-auto bg-white relative flex flex-col items-center justify-center mb-12 overflow-hidden">
-                    <div className="h-auto font-light flex flex-col items-center p-2 m-auto">
-                        <h1 className="text-3xl">Eventos</h1>
+                <div class="px-10 my-4 py-6 rounded shadow-md hover:shadow-xl bg-white w-4/5 mx-auto">
+                    <div class="flex justify-between items-center">
+                        <span class="font-light text-gray-600">March 28, 2021</span>
+                        <a class="px-2 py-1 bg-green-500 text-gray-100 font-bold rounded hover:bg-green-600" href="/">Evento</a>
                     </div>
-                    <div className="h-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
-                        <div className="h-auto relative flex flex-row items-center justify-center p-2 sm:p-0 md:p-0">
-                            <div className="items-center text-white bg-yellow-900 p-2 flex justify-center font-light mr-2 rounded-md">
-                                05/04
-                            </div>
-                            <div className="h-auto relative flex flex-col p-2">
-                                <div>
-                                    Evento finalizado
-                                </div>
-                                <div>
-                                    <small>Obrigado a todos que participaram do evento... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mt-2">
+                        <a class="text-2xl text-gray-700 font-bold hover:text-gray-600" href="/">
+                            Lorem ipsum dolor sit amet
+                        </a>
+                        <p class="mt-2 text-gray-600">
+                            Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                        </p>
                     </div>
-                    <div className="h-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
-                        <div className="h-auto relative flex flex-row items-center justify-center p-2">
-                            <div className="items-center text-white bg-green-500 p-2 flex justify-center font-light mr-2 rounded-md">
-                                05/04
-                            </div>
-                            <div className="h-auto relative flex flex-col p-2">
-                                <div>
-                                    Evento Acontecendo
-                                </div>
-                                <div>
-                                    <small>O evento de lançamento começou! Chame seus... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-auto relative flex flex-col items-center justify-center p-2 overflow-hidden">
-                        <div className="h-auto relative flex flex-row items-center justify-center p-2">
-                            <div className="items-center text-white bg-indigo-500 p-2 flex justify-center font-light mr-2 rounded-md">
-                                05/04
-                            </div>
-                            <div className="h-auto relative flex flex-col p-2">
-                                <div>
-                                    Proximo evento
-                                </div>
-                                <div>
-                                    <small>Depois que sairmos do beta um evento será ma... <a className="hover:text-blue-500 hover:underline" href="/" alt="Ver Mais">Ver Mais</a></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-row items-center justify-center p-1">
-                        <a className="hover:text-blue-500 hover:underline" href="/">Mais Eventos</a>
+                    <div class="flex justify-between items-center mt-4">
+                        <a class="text-blue-600 hover:underline" href="/">Visit Article</a>
                     </div>
                 </div>
-
+                <div class="px-10 my-4 py-6 rounded shadow-md hover:shadow-xl bg-white w-4/5 mx-auto">
+                    <div class="flex justify-between items-center">
+                        <span class="font-light text-gray-600">March 28, 2021</span>
+                        <a class="px-2 py-1 bg-red-500 text-gray-100 font-bold rounded hover:bg-red-600" href="/">Manutenção</a>
+                    </div>
+                    <div class="mt-2">
+                        <a class="text-2xl text-gray-700 font-bold hover:text-gray-600" href="/">
+                            Lorem ipsum dolor sit amet
+                        </a>
+                        <p class="mt-2 text-gray-600">
+                            Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-4">
+                        <a class="text-blue-600 hover:underline" href="/">Visit Article</a>
+                    </div>
+                </div>
+                <div class="px-10 my-4 py-6 rounded shadow-md hover:shadow-xl bg-white w-4/5 mx-auto">
+                    <div class="flex justify-between items-center">
+                        <span class="font-light text-gray-600">March 28, 2021</span>
+                        <a class="px-2 py-1 bg-yellow-500 text-gray-100 font-bold rounded hover:bg-yellow-600" href="/">Manutenção</a>
+                    </div>
+                    <div class="mt-2">
+                        <a class="text-2xl text-gray-700 font-bold hover:text-gray-600" href="/">
+                            Lorem ipsum dolor sit amet
+                        </a>
+                        <p class="mt-2 text-gray-600">
+                            Ille enim occurrentia nescio quae comminiscebatur; Eadem nunc mea adversum te oratio est. Sit sane ista voluptas. Omnes enim iucundum motum, quo sensus hilaretur.
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-4">
+                        <a class="text-blue-600 hover:underline" href="/">Visit Article</a>
+                    </div>
+                </div>
             </div>
         </>
     )
