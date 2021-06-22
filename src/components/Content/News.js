@@ -59,7 +59,7 @@ const NewsHome = () => {
                 <div className="px-10 my-4 py-6 rounded shadow-md hover:shadow-xl bg-white w-4/5 mx-auto">
                     <div className="flex justify-between items-center">
                         <span className="font-light text-gray-600">March 28, 2021</span>
-                        <a className="px-2 py-1 bg-yellow-500 text-gray-100 font-bold rounded hover:bg-yellow-600" href="/">Manutenção</a>
+                        <a className="px-2 py-1 bg-yellow-500 text-gray-100 font-bold rounded hover:bg-yellow-600" href="/">Atualização</a>
                     </div>
                     <div className="mt-2">
                         <a className="text-2xl text-gray-700 font-bold hover:text-gray-600" href="/">
