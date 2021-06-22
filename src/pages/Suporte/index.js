@@ -8,7 +8,7 @@ const Suporte = () => {
     return (
         <>
             <div className="flex justify-center">
-                <div className="h-screen my-10 w-full lg:w-5/6 shadow-md">
+                <div className="h-auto my-10 w-full lg:w-5/6 shadow-md">
                     <div className="flex items-center flex-col">
                         <div className="text-5xl font-thin">Suporte</div>
                         <div>
