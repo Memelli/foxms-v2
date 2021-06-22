@@ -1,15 +1,18 @@
 import './App.css';
-import NewsHome from './components/Content/News';
 import Footer from './components/Footer.js/Footer';
-import Hero from './components/Header/Hero';
 import Navbar from './components/Header/Navbar';
+import {Switch, Route} from 'react-router-dom'
+import Home from './pages/Home';
+import Cadastro from './pages/Cadastro';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <NewsHome />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/signup' exact component={Cadastro} />
+      </Switch>
       <Footer />
     </>
   );
