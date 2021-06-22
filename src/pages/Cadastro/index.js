@@ -4,7 +4,7 @@ const Cadastro = () => {
     return (
         <>
 
-            <div className="container mx-auto h-auto shadow-md my-10 w-5/6 flex-1 flex flex-col items-center justify-center px-2">
+            <div className="container rounded mx-auto h-auto shadow-md my-10 w-5/6 flex-1 flex flex-col items-center justify-center px-2">
                 <div className="bg-white px-6 py-8 flex justify-center flex-col items-center text-black w-full">
                     <h1 className="mb-8 text-5xl font-thin text-center">Cadastro</h1>
                     <input
