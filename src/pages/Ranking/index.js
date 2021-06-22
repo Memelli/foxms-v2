@@ -4,7 +4,7 @@ const Ranking = () => {
     return (
         <>
             <div className="flex justify-center">
-                <div className="bg-white h-auto my-10 w-5/6 flex flex-col shadow-md justify-center pb-4 px-4 rounded-md">
+                <div className="bg-white h-auto my-10 w-full lg:w-5/6 md:5/6 flex flex-col shadow-md justify-center pb-4 px-4 rounded-md">
                     <div className="flex justify-between w-full pt-6 ">
                         <p className="w-full text-center text-5xl font-thin ml-3">Ranking</p>
                     </div>
