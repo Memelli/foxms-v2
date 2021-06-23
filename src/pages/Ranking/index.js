@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import data from '../../components/Content/dataRanking'
 
 const Ranking = () => {
+    // eslint-disable-next-line no-unused-vars
     const [info, setInfo] = useState(data)
     const [search, setSearch] = useState('')
+    
     /* info.sort((a, b) => b.level - a.level) */
     
     const array = info.filter((dRank) => dRank.name.toLowerCase().includes(search.toLowerCase()))
@@ -45,9 +47,10 @@ const Ranking = () => {
                                 </tr>
                             </thead>
                             <tbody className="text-sm font-normal text-gray-700">
-                                {dataRanking.map(user => (
+                                {dataRanking.map((user, index) => 
+                                   (
                                     <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
-                                        <td className="px-4 py-4">#{user.id}</td>
+                                        <td className="px-4 py-4">{index + 1}</td>
                                         <td className="px-4 py-4"></td>
                                         <td className="px-4 py-4">{user.name}</td>
                                         <td className="px-4 py-4">{user.level}</td>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import NewsHome from '../../components/Content/News'
 import Hero from '../../components/Header/Hero'

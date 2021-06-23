@@ -3,6 +3,7 @@ import Accordion from '../../components/utils/accordion'
 import data from '../../components/utils/accordion/questions'
 
 const Suporte = () => {
+    // eslint-disable-next-line no-unused-vars
     const [questions, setQuestions] = useState(data)
 
     return (

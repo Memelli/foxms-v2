@@ -1,11 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const NewsHome = ({ title, desc, date, type }) => {
-    const blue = 'bg-blue-500 hover:bg-blue-600'
-    const [tag, setTag] = useState('')
-    const [bg, setBg] = useState('')
-     
-   
         return (
             <>
                 
