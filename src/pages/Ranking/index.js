@@ -3,8 +3,11 @@ import data from '../../components/Content/dataRanking'
 
 const Ranking = () => {
     const [info, setInfo] = useState(data)
-    const array = info.sort((a, b) => b.level - a.level)
-
+    const [search, setSearch] = useState('')
+    /* info.sort((a, b) => b.level - a.level) */
+    
+    const array = info.filter((dRank) => dRank.name.toLowerCase().includes(search.toLowerCase()))
+    const dataRanking = array.sort((a ,b) => b.level - a.level)
     return (
         <>
             <div className="flex justify-center">
@@ -18,7 +21,7 @@ const Ranking = () => {
                             Lista das classes
                         </div>
                         <div className="w-full sm:w-64 inline-block relative ">
-                            <input type="" name="" className="leading-snug border border-gray-300 block w-full appearance-none bg-gray-100 text-sm text-gray-600 py-1 px-4 pl-8 rounded-lg" placeholder="Procurar" />
+                            <input type="text" name="searchBox" onChange={e => setSearch(e.target.value)} className="leading-snug border border-gray-300 block w-full appearance-none bg-gray-100 text-sm text-gray-600 py-1 px-4 pl-8 rounded-lg" placeholder="Procurar" />
 
                             <div className="pointer-events-none absolute pl-3 inset-y-0 left-0 flex items-center px-2 text-gray-300">
 
@@ -42,7 +45,7 @@ const Ranking = () => {
                                 </tr>
                             </thead>
                             <tbody className="text-sm font-normal text-gray-700">
-                                {array.map(user => (
+                                {dataRanking.map(user => (
                                     <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                                         <td className="px-4 py-4">#{user.id}</td>
                                         <td className="px-4 py-4"></td>
