@@ -9,7 +9,7 @@ const Ranking = () => {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const url = 'http://100.25.179.226:8080/chrs/public/rank'
+            const url = 'https://100.25.179.226:8080/chrs/public/rank'
             const result = await axios.get(url, {
                 method: 'GET',
                 headers: {
